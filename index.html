@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Neon Tech Hub</h1>
+    <p>Interactive Learning Experience</p>
+</header>
+
+<!-- Carousel -->
+<section class="carousel-section">
+    <h2>Explore Technology</h2>
+    <div class="carousel">
+        <img id="carouselImage" src="https://picsum.photos/id/1005/800/400">
+        <div class="controls">
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+</section>
+
+<!-- Quiz -->
+<section class="quiz-section">
+    <div class="quiz-card">
+        <h2>Tech Quiz</h2>
+        <p id="question"></p>
+
+        <select id="answerSelect">
+            <option value="">-- Choose Answer --</option>
+        </select>
+
+        <button onclick="checkAnswer()">Submit</button>
+        <button onclick="nextQuestion()">Next</button>
+
+        <p id="feedback"></p>
+        <p id="score"></p>
+    </div>
+</section>
+
+<!-- API Section -->
+<section class="api-section">
+    <h2>Random Tech Joke</h2>
+    <button onclick="getJoke()">Get Joke</button>
+    <p id="joke"></p>
+</section>
+
+<footer>
+    <p>© 2026 Neon Tech Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
